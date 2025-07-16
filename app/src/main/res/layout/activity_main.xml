@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Grid of 9 buttons -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_marginBottom="24dp">
+
+        <!-- Add 9 buttons -->
+        <Button android:id="@+id/button0" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button1" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button2" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button3" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button4" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button5" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button6" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button7" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button8" style="@style/TicTacToeButton"/>
+    </GridLayout>
+
+    <!-- Text showing the result -->
+    <TextView
+        android:id="@+id/resultText"
+        android:text="Player X's Turn"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Play Again Button -->
+    <Button
+        android:id="@+id/playAgainButton"
+        android:text="Play Again"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
